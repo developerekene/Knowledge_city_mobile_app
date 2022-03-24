@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".SplashScreen.KnowledgeCitySplashSceern">
+
+    <ImageView
+        android:id="@+id/splashscreen_icon_view"
+        android:layout_width="291dp"
+        android:layout_height="173dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/knowledgecitylogo" />
+
+
+    <ProgressBar
+        android:id="@+id/splashscreen_progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/splashscreen_icon_view"
+        android:layout_marginTop="5dp"
+        android:indeterminateTint="#0726C1" />
+
+
+</RelativeLayout>

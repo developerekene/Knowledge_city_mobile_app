@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0726C1"
+    tools:context=".Activities.OnlineAssesmentsActivity">
+
+    <TextView
+        android:id="@+id/Online_Assesments_text_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Online_Assesments_Button_id"
+        android:layout_centerInParent="true"
+        android:text="Online Assesments"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="417dp" />
+
+    <TextView
+        android:id="@+id/Online_Assesments_Text_id"
+        android:layout_width="344dp"
+        android:layout_height="190dp"
+        android:layout_centerInParent="true"
+        android:fontFamily="casual"
+        android:text="Read and downlaoad from our wide varieties of Books. From Motivational, Story Books, Math Books, Journals, History, Educational and more. Knowledge City contains over 10,000 books ready at your disposal to help you gain the knowledge you need in any area of your life."
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/Online_Assesments_Button_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Next"
+        android:textColor="@color/black" />
+
+</RelativeLayout>
