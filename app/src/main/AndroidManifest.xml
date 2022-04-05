@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/App.Theme">
         <activity
+            android:name=".Activities.CirclerAcitivity"
+            android:exported="false" />
+        <activity
             android:name=".Activities.PracticeActivity"
             android:exported="false" />
         <activity

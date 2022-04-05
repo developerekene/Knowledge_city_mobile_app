@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import com.example.knowledgecitymobileapp.Activities.BooksActivity
+import com.example.knowledgecitymobileapp.Activities.CirclerAcitivity
 import com.example.knowledgecitymobileapp.Activities.MainActivity
 import com.example.knowledgecitymobileapp.R
 
@@ -15,7 +16,7 @@ class KnowledgeCitySplashSceern : AppCompatActivity() {
         setContentView(R.layout.activity_knowledge_city_splash_sceern)
 
         Handler().postDelayed({
-            startActivity(Intent(this, BooksActivity::class.java))
+            startActivity(Intent(this, CirclerAcitivity::class.java))
         }, splashTime)
     }
 }

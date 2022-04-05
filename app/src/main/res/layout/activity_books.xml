@@ -14,14 +14,13 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/Books_Button_id"
         android:layout_centerInParent="true"
+        android:layout_marginBottom="417dp"
+        android:fontFamily="sans-serif-condensed-medium"
         android:text="Books"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:fontFamily="sans-serif-condensed-medium"
-        android:textStyle="bold"
         android:textSize="30dp"
-        android:layout_centerVertical="true"
-        android:layout_marginBottom="417dp" />
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/Books_Text_id"

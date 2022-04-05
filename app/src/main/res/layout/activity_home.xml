@@ -11,24 +11,25 @@
         android:id="@+id/home_text_heading"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_centerVertical="true"
-        android:layout_marginBottom="417dp"
+        android:layout_marginBottom="20dp"
         android:fontFamily="sans-serif-condensed-medium"
         android:text="Africa's Online Learning Hub"
+        android:layout_above="@id/home_text_desc"
         android:textAlignment="center"
         android:textColor="#0726C1"
         android:textSize="30dp"
         android:textStyle="bold" />
 
     <TextView
+        android:id="@+id/home_text_desc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="290dp"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="374dp"
+        android:text="Now let's Begin"
         android:textAlignment="center"
-        android:textSize="20sp"
-        android:text="Now let's Begin" />
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/home_Button_id"
