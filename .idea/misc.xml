@@ -3,15 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/layout-w1240dp/activity_login.xml" value="0.31328125" />
+        <entry key="app/src/main/res/layout-w936dp/activity_login.xml" value="0.349609375" />
         <entry key="app/src/main/res/layout/activity_article.xml" value="0.3096722492118007" />
         <entry key="app/src/main/res/layout/activity_books.xml" value="0.2953125" />
         <entry key="app/src/main/res/layout/activity_circler_acitivity.xml" value="0.2953125" />
         <entry key="app/src/main/res/layout/activity_courses.xml" value="0.2953125" />
         <entry key="app/src/main/res/layout/activity_home.xml" value="0.22055358886718746" />
         <entry key="app/src/main/res/layout/activity_knowledge_city_splash_sceern.xml" value="0.28125" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2598958333333333" />
         <entry key="app/src/main/res/layout/activity_online_assesments.xml" value="0.2953125" />
         <entry key="app/src/main/res/layout/activity_practice.xml" value="0.2953125" />
+        <entry key="app/src/main/res/layout/activity_signup.xml" value="0.25" />
         <entry key="app/src/main/res/layout/circler.xml" value="0.2953125" />
         <entry key="app/src/main/res/layout/home_view_pager_item.xml" value="0.25" />
         <entry key="app/src/main/res/layout/item_page.xml" value="0.2953125" />
