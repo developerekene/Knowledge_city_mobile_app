@@ -10,7 +10,7 @@ import com.example.knowledgecitymobileapp.Activities.MainActivity
 import com.example.knowledgecitymobileapp.R
 
 class KnowledgeCitySplashSceern : AppCompatActivity() {
-    private val splashTime: Long = 5000
+    private val splashTime: Long = 4000
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_knowledge_city_splash_sceern)

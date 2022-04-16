@@ -70,13 +70,13 @@
         android:id="@+id/login_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sign Up"
-        android:layout_alignParentRight="true"
         android:layout_below="@id/login_password"
+        android:layout_alignParentRight="true"
         android:layout_marginTop="40dp"
         android:layout_marginRight="20dp"
-        android:textColor="@color/white"
-        android:background="#0726C1"/>
+        android:background="#0726C1"
+        android:text="Log In"
+        android:textColor="@color/white" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/forgot_password"

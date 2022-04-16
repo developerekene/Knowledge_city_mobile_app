@@ -10,11 +10,12 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerInParent="true"
+        android:layout_marginTop="200dp"
+        android:textAllCaps="true"
         android:text="Title Text"
-        android:layout_marginTop="260dp"
         android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="32sp"
+        android:textColor="@color/white"
+        android:textSize="35sp"
         android:textStyle="bold" />
 
     <TextView
