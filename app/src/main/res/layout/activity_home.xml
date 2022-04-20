@@ -25,11 +25,29 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:layout_centerVertical="true"
         android:layout_marginBottom="374dp"
         android:text="Now let's Begin"
         android:textAlignment="center"
         android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/agreeandcontuine_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/home_Button_id"
+        android:layout_marginBottom="15dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="20dp"
+        android:text="Agree and consent to the user agreement, it's policies and the private policy" />
+
+    <TextView
+        android:id="@+id/agreeandcotuine_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/agreeandcontuine_2"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="8dp"
+        android:text="By clicking agree and contuine, I hereby:" />
 
     <Button
         android:id="@+id/home_Button_id"
@@ -40,7 +58,7 @@
         android:layout_marginRight="-2dp"
         android:layout_marginBottom="30dp"
         android:background="#0726C1"
-        android:text="Lets Begin"
+        android:text="Agree and Continue"
         android:textColor="@color/white" />
 
 </RelativeLayout>

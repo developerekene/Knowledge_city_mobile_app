@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
 import android.widget.Button
+import android.widget.ImageButton
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
@@ -18,7 +19,14 @@ class MainActivity : AppCompatActivity() {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+
         var buttonToSignUp: Button = findViewById(R.id.button)
+        var menuButton: ImageButton = findViewById(R.id.drop_down_button)
+
+        menuButton.setOnClickListener {
+            Toast.makeText(this, "Menu Button Clicked", Toast.LENGTH_SHORT).show()
+        }
 
         buttonToSignUp.setOnClickListener {
             var intent = Intent(this, signupActivity::class.java)

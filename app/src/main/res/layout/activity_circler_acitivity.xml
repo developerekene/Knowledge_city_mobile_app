@@ -24,7 +24,7 @@
         android:layout_marginRight="20dp"
         android:layout_marginBottom="20dp"
         android:backgroundTint="@color/white"
-        android:text="Next"
+        android:text="Lets Begin"
         android:textColor="#0726C1" />
 
     <androidx.viewpager2.widget.ViewPager2
