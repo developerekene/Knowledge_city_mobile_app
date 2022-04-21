@@ -1,25 +1,181 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FAF9F9"
-    tools:context=".Activities.MainActivity">
+    tools:context=".Activities.MainActivity"
+    android:orientation="vertical">
 
+    <ImageView
+        android:id="@+id/background_image"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/darkblue"
+        android:scaleType="fitXY"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_picture"
+        android:layout_width="113dp"
+        android:layout_height="118dp"
+        android:src="@drawable/profile_0"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="-50dp"/>
+    <TextView
+        android:id="@+id/profile_full_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Full Name"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="25sp"
+        android:textColor="#0726C1"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="20dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Phone Number"
+        android:layout_marginBottom="12dp"
+        android:textSize="22sp"
+        android:layout_marginStart="20dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textSize="22sp"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/profile_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:text="Courses Registered"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textColor="#0726C1"
+        />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/profile_view_pager_1"
+        android:layout_width="match_parent"
+        android:layout_height="120dp" />
+
+    <TextView
+        android:id="@+id/profile_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:text="Personal Items"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textColor="#0726C1" />
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/profile_view_pager_2"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="Profile Fragment"/>
+        android:text="bar"
+        android:textAlignment="center"/>
 
-<!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
-<!--        android:id="@+id/bottom_navigation_view"-->
+
+<!--    <LinearLayout -->
 <!--        android:layout_width="match_parent"-->
 <!--        android:layout_height="wrap_content"-->
-<!--        android:layout_alignParentBottom="true"-->
-<!--        android:background="@color/white"-->
-<!--        app:menu="@menu/bottom_menu_bar"></com.google.android.material.bottomnavigation.BottomNavigationView>-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        android:orientation="horizontal">-->
+<!--        -->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="20dp"-->
+<!--            android:text="Books Read:" />-->
 
-</RelativeLayout>
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="15dp"-->
+<!--            android:text="Number of Books Read" />-->
+
+<!--    </LinearLayout>-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        android:orientation="horizontal">-->
+<!--        -->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="20dp"-->
+<!--            android:text="Books Downloaded:" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="15dp"-->
+<!--            android:text="Number of Books Downloaded" />-->
+
+<!--    </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:orientation="horizontal">-->
+<!--            -->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="20dp"-->
+<!--                android:text="Articles Read/Published:" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="15dp"-->
+<!--                android:text="Number of Articles Read/Published" />-->
+
+<!--        </LinearLayout>-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="20dp"-->
+<!--            android:text="Test Passed:" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="15dp"-->
+<!--            android:text="Number of Test Passed" />-->
+
+<!--    </LinearLayout>-->
+
+
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:id="@+id/floating_action_button_1"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:src="@drawable/ic_edit"-->
+<!--        android:layout_marginStart="340dp"-->
+<!--        android:layout_marginTop="-120dp"-->
+<!--        android:backgroundTint="@color/black"/>-->
+
+
+</LinearLayout>

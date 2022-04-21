@@ -23,23 +23,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-
-       // var buttonToSignUp: Button = findViewById(R.id.button)
-//        var menuButton: ImageButton = findViewById(R.id.drop_down_button)
-//        var searchIcon: MenuItem = findViewById(R.id.menu_search)
-
-
-
-
-//        buttonToSignUp.setOnClickListener {
-//            var intent = Intent(this, signupActivity::class.java)
-//            startActivity(intent)
-////        }
-//
-//
-//        }
-
-        //setting the variable to the fragment classes
         val homeFragment = HomeFragment()
         val searchFragment = SearchFragment()
         val profileFragment = ProfileFragment()

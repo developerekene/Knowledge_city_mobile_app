@@ -1,25 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="#FAF9F9"
     tools:context=".Activities.MainActivity">
-
-    <TextView
-        android:layout_width="wrap_content"
+    <SearchView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="Search Fragment"/>
+        android:background="@color/white"
+        android:queryHint="Search"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="680dp">
 
-<!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
-<!--        android:id="@+id/bottom_navigation_view"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_alignParentBottom="true"-->
-<!--        android:background="@color/white"-->
-<!--        app:menu="@menu/bottom_menu_bar"></com.google.android.material.bottomnavigation.BottomNavigationView>-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Search Items here"
+            android:layout_marginTop="200dp"
+            android:textAlignment="center"/>
+    </ScrollView>
 
-</RelativeLayout>
+
+
+
+</LinearLayout>
