@@ -4,6 +4,7 @@ import java.util.regex.Pattern
 
 class Functions {
 
+
     fun validateFirstName(dataFName: String): Boolean{
         return dataFName.matches(".*[a-z].*".toRegex()) && dataFName.length > 2 && dataFName.length <= 15
     }

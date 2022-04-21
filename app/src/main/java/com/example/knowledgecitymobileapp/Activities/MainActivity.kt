@@ -11,7 +11,10 @@ import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
+import androidx.fragment.app.Fragment
 import com.example.knowledgecitymobileapp.R
+import com.example.knowledgecitymobileapp.fragmentclasses.*
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.navigation.NavigationView
 
 class MainActivity : AppCompatActivity() {
@@ -21,21 +24,48 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
-        var buttonToSignUp: Button = findViewById(R.id.button)
-        var menuButton: ImageButton = findViewById(R.id.drop_down_button)
+       // var buttonToSignUp: Button = findViewById(R.id.button)
+//        var menuButton: ImageButton = findViewById(R.id.drop_down_button)
+//        var searchIcon: MenuItem = findViewById(R.id.menu_search)
 
-        menuButton.setOnClickListener {
-            Toast.makeText(this, "Menu Button Clicked", Toast.LENGTH_SHORT).show()
-        }
 
-        buttonToSignUp.setOnClickListener {
-            var intent = Intent(this, signupActivity::class.java)
-            startActivity(intent)
+
+
+//        buttonToSignUp.setOnClickListener {
+//            var intent = Intent(this, signupActivity::class.java)
+//            startActivity(intent)
+////        }
+//
+//
 //        }
 
+        //setting the variable to the fragment classes
+        val homeFragment = HomeFragment()
+        val searchFragment = SearchFragment()
+        val profileFragment = ProfileFragment()
+        val settingFragment = SettingFragment()
+        val toolsFragment = ToolsFragment()
 
+        //setting current fragment to display
+        setCurrentFragment(homeFragment)
+
+        val bottomNavigationView: BottomNavigationView = findViewById(R.id.bottom_navigation_view)
+        bottomNavigationView.setOnNavigationItemSelectedListener {
+            when(it.itemId){
+                R.id.menu_home -> setCurrentFragment(homeFragment)
+                R.id.menu_search -> setCurrentFragment(searchFragment)
+                R.id.menu_profile -> setCurrentFragment(profileFragment)
+                R.id.menu_settings -> setCurrentFragment(settingFragment)
+                R.id.menu_tools -> setCurrentFragment(toolsFragment)
+            }
+            true
         }
 
+    }
+
+    private fun setCurrentFragment(fragment: Fragment) = supportFragmentManager.beginTransaction().apply {
+        replace(R.id.fragment_holder, fragment)
+        commit()
     }
 }
 
