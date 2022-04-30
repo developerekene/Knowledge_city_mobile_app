@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -9,173 +9,67 @@
     tools:context=".Activities.MainActivity"
     android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/background_image"
+    <View
+        android:id="@+id/view_myview"
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:src="@drawable/darkblue"
-        android:scaleType="fitXY"/>
+        android:background="#0726C1" />
+
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/profile_picture"
-        android:layout_width="113dp"
-        android:layout_height="118dp"
-        android:src="@drawable/profile_0"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignParentTop="true"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="-50dp"/>
+        android:layout_marginTop="20dp"
+        android:src="@drawable/profile_0" />
     <TextView
         android:id="@+id/profile_full_name"
         android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
         android:layout_height="wrap_content"
         android:text="Full Name"
         android:fontFamily="sans-serif-condensed"
         android:textSize="25sp"
-        android:textColor="#0726C1"
-        android:layout_marginBottom="15dp"
-        android:layout_marginStart="20dp"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Phone Number"
-        android:layout_marginBottom="12dp"
-        android:textSize="22sp"
-        android:layout_marginStart="20dp"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Email"
-        android:textSize="22sp"
-        android:layout_marginStart="20dp"/>
+        android:textColor="#ffffff"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="130dp"/>
 
-    <TextView
-        android:id="@+id/profile_text_view"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:textAlignment="center"
-        android:textSize="25sp"
-        android:text="Courses Registered"
-        android:textStyle="bold"
-        android:textAllCaps="true"
-        android:textColor="#0726C1"
-        />
-
-    <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/profile_view_pager_1"
-        android:layout_width="match_parent"
-        android:layout_height="120dp" />
-
-    <TextView
-        android:id="@+id/profile_item"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:textAlignment="center"
-        android:textSize="18sp"
-        android:text="Personal Items"
-        android:textStyle="bold"
-        android:textAllCaps="true"
-        android:textColor="#0726C1" />
-    <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/profile_view_pager_2"
-        android:layout_width="match_parent"
-        android:layout_height="120dp"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="bar"
-        android:textAlignment="center"/>
-
-
-<!--    <LinearLayout -->
+<!--    <ScrollView-->
+<!--        android:id="@+id/my_scrollview"-->
 <!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginTop="15dp"-->
-<!--        android:orientation="horizontal">-->
-<!--        -->
-<!--        <TextView-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginStart="20dp"-->
-<!--            android:text="Books Read:" />-->
+<!--        android:layout_height="620dp"-->
+<!--        android:layout_below="@id/view_myview">-->
 
-<!--        <TextView-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginStart="15dp"-->
-<!--            android:text="Number of Books Read" />-->
-
-<!--    </LinearLayout>-->
-
-<!--    <LinearLayout-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginTop="15dp"-->
-<!--        android:orientation="horizontal">-->
-<!--        -->
-<!--        <TextView-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginStart="20dp"-->
-<!--            android:text="Books Downloaded:" />-->
-
-<!--        <TextView-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginStart="15dp"-->
-<!--            android:text="Number of Books Downloaded" />-->
-
-<!--    </LinearLayout>-->
-
-<!--        <LinearLayout-->
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
 <!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginTop="15dp"-->
-<!--            android:orientation="horizontal">-->
-<!--            -->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="vertical">-->
+
 <!--            <TextView-->
-<!--                android:layout_width="wrap_content"-->
+<!--                android:id="@+id/profile_phone_number"-->
+<!--                android:layout_width="match_parent"-->
 <!--                android:layout_height="wrap_content"-->
 <!--                android:layout_marginStart="20dp"-->
-<!--                android:text="Articles Read/Published:" />-->
-
-<!--            <TextView-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginStart="15dp"-->
-<!--                android:text="Number of Articles Read/Published" />-->
-
-<!--        </LinearLayout>-->
-
-<!--    <LinearLayout-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginTop="15dp"-->
-<!--        android:orientation="horizontal">-->
-
-<!--        <TextView-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginStart="20dp"-->
-<!--            android:text="Test Passed:" />-->
-
-<!--        <TextView-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginStart="15dp"-->
-<!--            android:text="Number of Test Passed" />-->
-
-<!--    </LinearLayout>-->
+<!--                android:text="Phone Number"-->
+<!--                android:textColor="#000"-->
+<!--                android:textSize="18sp"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
 
 
-<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
-<!--        android:id="@+id/floating_action_button_1"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:src="@drawable/ic_edit"-->
-<!--        android:layout_marginStart="340dp"-->
-<!--        android:layout_marginTop="-120dp"-->
-<!--        android:backgroundTint="@color/black"/>-->
+<!--            <androidx.viewpager2.widget.ViewPager2-->
+<!--                android:id="@+id/profile_my_viewpager"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="200dp"-->
+<!--                app:layout_constraintEnd_toEndOf="@+id/profile_phone_number"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/profile_phone_number"-->
+<!--                app:layout_constraintTop_toBottomOf="@id/profile_phone_number">-->
 
 
-</LinearLayout>
+<!--            </androidx.viewpager2.widget.ViewPager2>-->
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--    </ScrollView>-->
+</RelativeLayout>

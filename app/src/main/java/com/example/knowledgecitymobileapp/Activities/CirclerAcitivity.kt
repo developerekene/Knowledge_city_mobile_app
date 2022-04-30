@@ -27,5 +27,7 @@ class CirclerAcitivity : AppCompatActivity() {
             var intent = Intent(this, HomeActivity::class.java)
             startActivity(intent)
         }
+
+
     }
 }
