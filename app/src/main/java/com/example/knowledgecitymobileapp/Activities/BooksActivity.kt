@@ -7,7 +7,9 @@ import com.example.knowledgecitymobileapp.R
 class BooksActivity : AppCompatActivity() {
 //    private lateinit var binding: ActivityBooksBinding
     override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_books)
+    super.onCreate(savedInstanceState)
+    setContentView(R.layout.activity_books)
+
     }
+
 }

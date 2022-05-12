@@ -11,11 +11,11 @@
         android:layout_alignParentTop="true"
         android:layout_centerInParent="true"
         android:layout_marginTop="200dp"
-        android:textAllCaps="true"
         android:text="Title Text"
         android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="35sp"
+        android:textAllCaps="true"
+        android:textColor="#0726C1"
+        android:textSize="30sp"
         android:textStyle="bold" />
 
     <TextView
@@ -29,6 +29,6 @@
         android:paddingLeft="15dp"
         android:paddingRight="15dp"
         android:text="about Topic"
-        android:textColor="@color/white"
-        android:textSize="20sp" />
+        android:textColor="@color/black"
+        android:textSize="15sp" />
 </RelativeLayout>

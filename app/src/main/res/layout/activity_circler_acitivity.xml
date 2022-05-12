@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#0726C1"
     tools:context=".Activities.CirclerAcitivity">
 
     <me.relex.circleindicator.CircleIndicator3
@@ -12,8 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_above="@id/view_pager_button"
-        android:layout_marginBottom="10dp"
-        android:background="#0726C1"/>
+        android:layout_marginBottom="10dp"/>
 
     <Button
         android:id="@+id/view_pager_button"
@@ -23,9 +21,9 @@
         android:layout_alignParentBottom="true"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="20dp"
-        android:backgroundTint="@color/white"
+        android:backgroundTint="#0726C1"
         android:text="Lets Begin"
-        android:textColor="#0726C1" />
+        android:textColor="@color/white" />
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/view_pager_2"
