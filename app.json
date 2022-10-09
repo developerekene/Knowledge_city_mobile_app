@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "knowledge-city-RN",
+    "slug": "knowledge-city-RN",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
